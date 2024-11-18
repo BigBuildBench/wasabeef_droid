@@ -1,0 +1,21 @@
+[package]
+name = "droid"
+version = "0.1.5"
+authors = ["wasabeef <dadadada.chop@gmail.com>"]
+edition = "2018"
+homepage = "https://github.com/wasabeef/droid"
+repository = "https://github.com/wasabeef/droid"
+categories = ["command-line-utilities"]
+readme = "README.md"
+keywords = ["prompt", "shell", "bash", "fish", "zsh"]
+license = "MIT/Apache-2.0"
+description = "A command-line tool for checking Android OS version history."
+
+exclude = ["media/**/*", "resources/**/*"]
+
+[dependencies]
+
+[[bin]]
+bench = false
+path = "src/main.rs"
+name = "droid"
